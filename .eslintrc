@@ -1,0 +1,37 @@
+{
+    "extends": "eslint:recommended",
+    "plugins": [
+        "angular"
+    ],
+	"parserOptions": {
+        "ecmaVersion": 6
+    },
+    "rules": {
+        "angular/controller-as": 0,
+        "angular/controller-as-vm": 0,
+		"comma-dangle": 0,
+		"no-extra-semi": 0,
+		"no-mixed-spaces-and-tabs": 0,
+		"no-unused-vars": [ 1, { "argsIgnorePattern": "kendo|iElement", "varsIgnorePattern": "vm|kendo|iElement" } ]
+    },
+    "env": {
+        "browser": true,
+        "jasmine": true,
+		"jquery": true
+    },
+    "globals": {
+		"_": true,
+		"$": true,
+        "kendo": true,
+        "angular": true,
+        "Dropbox": true,
+        "module": true,
+        "formatters": true,
+        "inject": true,
+        "PerfectScrollbar": true,
+        "MobileDetect": true,
+        "hljs": true,
+        "d3": true,
+        "moment": true
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Angular Dropbox aka @dropular</title>
+		<meta name="description" content="Angular porting for Dropbox API v2" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+
+		<!-- Dropular, the popular Dropbox library porting for Angular! -->
+		<div data-ng-app="dropularDemo">
+			<div class="dropular-container" id="demo" data-ng-controller="Main as vm"></div>
+		</div>
+
+		<!--
+			REQUIREMENTS
+				Or use:
+					https://unpkg.com/dropbox/dist/Dropbox-sdk.min.js
+		-->
+		<script src="dist/dropbox-sdk.min.js"></script>
+		<!-- ! REQUIREMENTS -->
+
+		<!-- Bower -->
+		<script src="bower_components/angular/angular.min.js"></script>
+
+		<!--
+			Demo
+				Run 'gulp' then uncomment this for test with the minified-uglified version:
+				<script src="dist/angular-dropbox.min.js"></script>
+				<script src="app/demo.min.js"></script>
+		-->
+		<script src="dist/angular-dropbox.js"></script>
+		<script src="src/demo.js"></script>
+
+	</body>
+</html>
