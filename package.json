@@ -20,7 +20,12 @@
     "sdk"
   ],
   "author": "Luca Iaconelli <lucabelli@msn.com>",
-  "license": "ISC",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/LuXDAmore/angular-dropbox/blob/master/LICENSE"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/LuXDAmore/angular-dropbox/issues"
   },
