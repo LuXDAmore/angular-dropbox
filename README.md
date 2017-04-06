@@ -154,4 +154,4 @@ Love Yeoman work and community? Help us keep it alive by donating funds to cover
 
 ## License
 
-BSD-2-Clause © Google
+@ Studio Mado
