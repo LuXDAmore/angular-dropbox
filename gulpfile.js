@@ -18,8 +18,10 @@ const gulp = require( 'gulp' )
 			presets:  [
 				'es2015',
 			],
+			minified: false,
 		},
 		uglify: {
+			mangle: true,
 			preserveComments: false,
 			compress: {
 				drop_console: true,
