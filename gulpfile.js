@@ -81,10 +81,8 @@ gulp
 				.src( options.directory.source + '/angular-dropbox.js' )
 				.pipe( sourcemaps.init() )
 				.pipe( babel( options.babel ) )
-				.pipe( concat( 'angular-dropbox.min.js' ) )
 				.pipe( uglify( options.uglify ) )
-				.pipe( eslint() )
-				.pipe( eslint.format() )
+				.pipe( concat( 'angular-dropbox.min.js' ) )
 				.pipe( sourcemaps.write( '.' ) )
 				.pipe( gulp.dest( options.directory.dist ) )
 			;
@@ -101,9 +99,9 @@ gulp
 
 			return gulp
 				.src( options.directory.source + '/angular-dropbox.js' )
-				.pipe( babel( options.babel ) )
 				.pipe( eslint() )
 				.pipe( eslint.format() )
+				.pipe( babel( options.babel ) )
 				.pipe( concat( 'angular-dropbox.js' ) )
 				.pipe( gulp.dest( options.directory.dist ) )
 			;
@@ -120,10 +118,10 @@ gulp
 
 			return gulp
 				.src( options.directory.source + '/demo.js' )
-				.pipe( sourcemaps.init() )
-				.pipe( babel( options.babel ) )
 				.pipe( eslint() )
 				.pipe( eslint.format() )
+				.pipe( sourcemaps.init() )
+				.pipe( babel( options.babel ) )
 				.pipe( concat( 'demo.min.js' ) )
 				.pipe( uglify( options.uglify ) )
 				.pipe( sourcemaps.write( '.' ) )

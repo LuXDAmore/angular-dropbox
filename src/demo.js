@@ -1,5 +1,6 @@
 (
 	function( angular ) {
+
 		'use strict';
 
 		// Angular App Start
@@ -17,8 +18,10 @@
 		app.config( Configuration );
 
 		function Configuration( $logProvider ) {
+
 			// Just for Debug purpose
 			$logProvider.debugEnabled( true );
+
 		};
 
 		Configuration.$inject = [ '$logProvider' ];
@@ -28,7 +31,9 @@
 		app.run( Run );
 
 		function Run( $log ) {
+
 			$log.info( '%c Dropular Demo app, ready to rock ✌️', 'color:#f1c40f' );
+
 		};
 
 		Run
@@ -65,9 +70,9 @@
 
 			// Init Dropangular
 			vm.dropular = Dropular.init( configuration );
-			 vm.dropular
-			 	.filesListFolder( { path: '' } )
-        		.then( response => $log.info( response.entries ) )
+			vm.dropular
+				.filesListFolder( { path: '' } )
+				.then( response => $log.info( response.entries ) )
 			;
 
 		};

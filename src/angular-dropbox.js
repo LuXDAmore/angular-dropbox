@@ -13,6 +13,7 @@
 
 (
 	function( angular ) {
+
 		'use strict';
 
 		/**
@@ -41,8 +42,10 @@
 			function getConfig() {
 
 				if( ! provider.options ) {
+
 					$log.error( 'No configuration provided.' );
 					return false;
+
 				};
 
 				return provider.options;
@@ -61,16 +64,20 @@
 				;
 
 				if( ! angular.isObject( configuration ) || angular.isUndefined( configuration ) ) {
+
 					$log.error( 'Configuration must be an object.' );
 					return;
+
 				};
 
 				tokenProvided = angular.isDefined( configuration.accessToken ) && angular.isString( configuration.accessToken );
 				clientIdProvided = angular.isDefined( configuration.clientId ) && angular.isString( configuration.clientId );
 
 				if( ! clientIdProvided && ! tokenProvided ) {
+
 					$log.error( 'accessToken or clienId must be provided and must be a non-empty string.' );
 					return;
+
 				};
 
 				provider.options = angular.extend( options, configuration );
@@ -132,6 +139,7 @@
 				;
 
 				if( options ) {
+
 					dropbox = new Dropbox( options );
 
 					if( typeof callback === 'function' )
@@ -176,7 +184,7 @@
 				let delay = scope.delay ? scope.delay : 0
 					, configuration = {
 						accessToken: scope.accessToken ? scope.accessToken : '',
-						clientId: scope.clientId ?scope.clientId : '',
+						clientId: scope.clientId ? scope.clientId : '',
 						debug: scope.debug ? scope.debug : false,
 					}
 				;

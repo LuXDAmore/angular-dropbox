@@ -1,10 +1,10 @@
 {
-  "name": "angular-dropbox",
+  "name": "dropular",
   "authors": [
     "Luca Iaconelli <lucabelli@msn.com>"
   ],
   "description": "Angular porting for Dropbox API v2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/angular-dropbox.js",
   "keywords": [
     "angular",

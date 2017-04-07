@@ -14,6 +14,7 @@
 */
 
 (function (angular) {
+
 	'use strict';
 
 	/**
@@ -43,6 +44,7 @@
 		function getConfig() {
 
 			if (!provider.options) {
+
 				$log.error('No configuration provided.');
 				return false;
 			};
@@ -63,6 +65,7 @@
 			    clientIdProvided = true;
 
 			if (!angular.isObject(configuration) || angular.isUndefined(configuration)) {
+
 				$log.error('Configuration must be an object.');
 				return;
 			};
@@ -71,6 +74,7 @@
 			clientIdProvided = angular.isDefined(configuration.clientId) && angular.isString(configuration.clientId);
 
 			if (!clientIdProvided && !tokenProvided) {
+
 				$log.error('accessToken or clienId must be provided and must be a non-empty string.');
 				return;
 			};
@@ -123,6 +127,7 @@
 			    dropbox = void 0;
 
 			if (options) {
+
 				dropbox = new Dropbox(options);
 
 				if (typeof callback === 'function') callback(dropbox);

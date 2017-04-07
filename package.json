@@ -1,5 +1,5 @@
 {
-  "name": "angular-dropbox",
+  "name": "dropular",
   "version": "1.0.0",
   "description": "Angular porting for Dropbox API v2",
   "main": "dist/angular-dropbox.js",
