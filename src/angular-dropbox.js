@@ -1,13 +1,13 @@
 /*
 *  Dropbox Wrapper for AngularJs @dropular
-*  API @ http://angular-dropbox.github.io/
+*  API @ https://luxdamore.github.io/angular-dropbox/
 *
 *  Dropular is a service that permit to comunicate with the new Dropbox API.
-* Manteined by @studiomado @luxdamore
+*  Manteined by @studiomado @luxdamore
 *
-* Dropbox links
-* 	- App creation: https://www.dropbox.com/developers/apps/create
-*	- Api explorer: https://dropbox.github.io/dropbox-api-v2-explorer/
+*  Dropbox links
+*      - App creation: https://www.dropbox.com/developers/apps/create
+*      - Api explorer: https://dropbox.github.io/dropbox-api-v2-explorer/
 *
 */
 
@@ -18,8 +18,8 @@
 
 		/**
 		* @function dropularConfigProvider
-		* @param  {angularProvider} $logProvider { Only used for debugging purpose }
-		* @return {object} { Provider && Services Configurator }
+		* @param   {angularConst} DEFAULT_CONFIGURATION { Only used for the default options of the plugin }
+		* @return {angularProvider} { Provider }
 		*/
 		function dropularConfigProvider( DEFAULT_CONFIGURATION ) {
 
@@ -54,8 +54,8 @@
 
 			/**
 			* @function setConfig
-			* @param {object} configuration { the configuration for your droprox API }
-			* @return {bool} { if everything goes fine }
+			* @param  {object} configuration { The configuration for Dropbox Developer }
+			* @return {object} { The configuration actually used }
 			*/
 			function setConfig( configuration = {} ) {
 
@@ -91,7 +91,7 @@
 
 			/**
 			* @function $get
-			* @return {angularServices} { The services for this provider }
+			* @return {angularService} { The services for this Provider }
 			*/
 			provider.$get = () => {
 
@@ -116,12 +116,12 @@
 
 		/**
 		* @function dropularFactory
-		* @param  {angularProvider} $log { Only used for debugging purpose }
+		* @param  {angularService} $log { Only used for debugging purpose }
+		* @param  {dropularConfig} $location { Configuration of the Plugin }
 		* @return {angularFactory} { Factory }
 		*/
 		function dropularFactory(
 			$log,
-			$location,
 			$dropularConfig
 		) {
 
@@ -129,8 +129,8 @@
 
 			/**
 			* @function init
-			* @param  {type} configuration = {} { Create new Dropbox instance }
-			* @return {type} { Dropbox instance }
+			* @param  {object} configuration { The configuration for Dropbox Developer }
+			* @return {function} callback { Callback function }
 			*/
 			function init( configuration = {}, callback ) {
 
@@ -162,7 +162,6 @@
 		dropularFactory
 			.$inject = [
 				'$log',
-				'$location',
 				'$dropularConfig'
 			]
 		;
