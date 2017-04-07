@@ -17,7 +17,9 @@
     "angular",
     "angularjs",
     "dropbox",
-    "sdk"
+    "sdk",
+    "dropular",
+    "angular-dropbox"
   ],
   "author": "Luca Iaconelli <lucabelli@msn.com>",
   "licenses": [

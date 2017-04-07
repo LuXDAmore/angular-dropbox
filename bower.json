@@ -10,7 +10,9 @@
     "angular",
     "angularjs",
     "dropbox",
-    "sdk"
+    "sdk",
+    "dropular",
+    "angular-dropbox"
   ],
   "license": "MIT",
   "homepage": "https://luxdamore.github.io/angular-dropbox/",
