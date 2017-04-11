@@ -4,7 +4,7 @@
     "Luca Iaconelli <lucabelli@msn.com>"
   ],
   "description": "Angular porting for Dropbox API v2",
-  "version": "1.0.1",
+  "version": "1.0.0-alpha",
   "main": "dist/angular-dropbox.js",
   "keywords": [
     "angular",
@@ -24,9 +24,9 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "^1.3.0"
+    "angular": "^1.4"
   },
   "devDependencies": {
-    "angular-mocks": "^1.6.4"
+    "angular-mocks": "^1.4"
   }
 }
