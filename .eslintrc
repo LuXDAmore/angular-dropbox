@@ -7,7 +7,7 @@
         "ecmaVersion": 6
     },
     "rules": {
-		"brace-style": [ "error", "1tbs", { "allowSingleLine": true } ],
+		"brace-style": [ "warn", "1tbs", { "allowSingleLine": true } ],
 		"comma-spacing": [ "error", { "before": false, "after": true } ],
 		"curly": [ "error", "multi-or-nest" ],
 		"no-multiple-empty-lines": [ "error", { "max": 2, "maxBOF": 1 } ],
@@ -20,10 +20,10 @@
 		"no-duplicate-imports":  [ "error", { "includeExports": true } ],
 		"no-floating-decimal": "error",
 		"no-multi-spaces": "error",
-		"no-return-assign": [ "warn", "except-parens" ],
+		"no-return-assign": [ "off", "except-parens" ],
 		"no-undef-init": "error",
 		"no-whitespace-before-property": "error",
-		"object-property-newline": "error",
+		"object-property-newline": "off",
 		"padded-blocks": [ "warn", { "switches": "never", "blocks": "always" } ],
 		"yield-star-spacing": [ "error", "both" ],
 		"one-var-declaration-per-line": [ "error", "always" ],
@@ -33,6 +33,15 @@
 		"comma-dangle": "off",
 		"no-extra-semi": "off",
 		"no-mixed-spaces-and-tabs": "warn",
+		"space-before-function-paren": [ "warn", "never" ],
+		"space-before-blocks": "warn",
+		"array-bracket-spacing": [ "warn", "always" ],
+		"space-in-parens": [ "warn", "always" ],
+		"object-curly-spacing": [ "warn", "always" ],
+		"keyword-spacing": [ "warn", { "after": false, "overrides": { "else": { "before": true, "after": true }, "return": { "after": true }, "case": { "after": true } } } ],
+		"no-irregular-whitespace": 1,
+		"space-unary-ops": [ 1, { "words" : true , "nonwords" : true } ],
+		"arrow-spacing": [ 1, {"before" : true , "after" : true } ],
 		"no-unused-vars": [ 1, { "argsIgnorePattern": "kendo|iElement", "varsIgnorePattern": "vm|kendo|iElement" } ]
     },
     "env": {
@@ -53,6 +62,7 @@
         "MobileDetect": true,
         "hljs": true,
         "d3": true,
+        "DomAnimator": true,
         "moment": true
     }
 }
