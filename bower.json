@@ -4,7 +4,7 @@
     "Luca Iaconelli <lucabelli@msn.com>"
   ],
   "description": "Angular porting for Dropbox API v2",
-  "version": "1.0.0-alpha",
+  "version": "0.1.0-alpha",
   "main": "dist/angular-dropbox.js",
   "keywords": [
     "angular",

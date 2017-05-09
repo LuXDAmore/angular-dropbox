@@ -1,6 +1,6 @@
 {
   "name": "dropular",
-  "version": "1.0.0-alpha",
+  "version": "0.1.0-alpha",
   "description": "Angular porting for Dropbox API v2",
   "main": "dist/angular-dropbox.js",
   "scripts": {

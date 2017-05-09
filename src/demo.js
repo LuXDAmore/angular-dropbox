@@ -54,8 +54,8 @@
 
 			// Settings of this application
 			const configuration = {
-				accessToken: 'G9RJXnXuGx0AAAAAAAAG8TaPckro4CeOor-uqHS-93u2fk581BjQ8th6eABr406D',
-				clientId: 'iquilqx7rzco1m8',
+				accessToken: 'your-access-code',
+				clientId: 'your-client-id',
 				debug: true,
 			};
 
